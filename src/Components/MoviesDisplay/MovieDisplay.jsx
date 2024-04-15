@@ -2,9 +2,8 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieDisplay = ({data}) => {
-  console.log(data);
   return (
-    <div className="m-12 grid grid-cols-4 grid-flow-dense gap-3">
+    <div className="mx-3 md:mx-6 lg:mx-12 my-6 grid grid-cols-2 grid-flow-dense md:grid-cols-3 lg:grid-cols-4">
       {data?.map((el, i) => {
           return <MovieCard key={i} data={el} index={i} />;
         })}

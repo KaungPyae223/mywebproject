@@ -1,18 +1,21 @@
 import React from 'react';
 import Nav from './Components/Nav';
-import Header from './Components/Headers/Header';
-import Search from './Components/Search';
-import Filter from './Components/MoviesDisplay/Filter';
-import Movies from './Components/MoviesDisplay/Movies';
+import HomePage from './Pages/HomePage';
+import DetailsPage from './Pages/DetailsPage';
+import { Route, Routes } from 'react-router-dom';
+import Search from './Pages/Search';
 
 const App = () => {
   return (
     <div>
       <Nav/>
-      <Header/>
-      <Search/>
-      <Filter/>
-      <Movies/>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/details/:id' element={<DetailsPage/>}/>
+        <Route path='/search/:search' element={<Search/>}/>
+
+      </Routes>
+      
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Filter = () => {
   
   };
   return (
-    <div className="px-12 flex flex-row justify-start gap-5 items-center">
+    <div className="mx-3 md:mx-6 lg:mx-12 px-3 flex flex-row justify-start gap-5 items-center">
       <p>Filter</p>
       <select
       onChange={selectedOnChange}
