@@ -1,5 +1,5 @@
 import HeaderComponent from "./HeaderComponent";
-import { useGetNowPlayingQuery } from "../../Services/EndPoints/MovieEndPoints";
+import { useGetUpCommingQuery } from "../../Services/EndPoints/MovieEndPoints";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -16,8 +16,7 @@ import {
 
 const Header = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const { isLoading, isError, isSuccess, data } = useGetNowPlayingQuery();
-  console.log(data?.results);
+  const { data } = useGetUpCommingQuery();
   return (
     <div>
       <Swiper

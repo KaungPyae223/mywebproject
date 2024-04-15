@@ -58,18 +58,7 @@ const Nav = () => {
           id="navbar-alignment"
           class="hs-collapse  py-2 hidden overflow-hidden transition-all duration-300 basis-full grow sm:block "
         >
-          <div class="flex flex-col text-lg gap-5  sm:flex-row sm:items-center sm:mt-0 ">
-            <a class="font-medium text-blue-500" href="#" aria-current="page">
-              Movies
-            </a>
-            
-            <a
-              class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-            >
-              Search
-            </a>
-          </div>
+          
         </div>
         
       </nav>

@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const HeaderComponent = ({data}) => {
   const backdropUrl = data ? `https://image.tmdb.org/t/p/original/${data.backdrop_path}` : '';
-  console.log(data);
+  
   return (
 
     <div 

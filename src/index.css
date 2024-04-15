@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.group:hover + .group {
+    display: none;
+    
+}
+
+.HoverLg{
+    @apply hover:col-start-3;
+}
+.RowStart1{
+    @apply hover:row-start-1;
+}
+.RowStart2{
+    @apply hover:row-start-2;
+}
+.RowStart3{
+    @apply hover:row-start-3;
+}
+.RowStart4{
+    @apply hover:row-start-4;
+}
+.RowStart5{
+    @apply hover:row-start-5;
+}
+.RowStart6{
+    @apply hover:row-start-6;
+}
